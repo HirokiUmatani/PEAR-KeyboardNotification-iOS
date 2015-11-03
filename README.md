@@ -4,6 +4,8 @@
 ### Overview
 It is keyboard notification for ios.
 
+### Demo Screen
+![screen_shot](http://pear.chat/image/KeyboardNotification.png);
 ### Installation
 <code>
 pod 'PEAR-KeyboardNotification-iOS'
