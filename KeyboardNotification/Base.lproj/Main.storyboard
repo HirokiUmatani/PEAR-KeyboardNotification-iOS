@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOA-zM-wwO">
+                                <rect key="frame" x="0.0" y="558" width="600" height="42"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="YQ8-Yh-jym"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsD-jU-zvY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="558"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4to-Jt-JAP">
+                                        <rect key="frame" x="8" y="483" width="584" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="qRp-PR-qr6"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4to-Jt-JAP" secondAttribute="bottom" constant="45" id="HAd-TD-NeI"/>
+                                    <constraint firstAttribute="trailing" secondItem="4to-Jt-JAP" secondAttribute="trailing" constant="8" id="VlR-nO-7BN"/>
+                                    <constraint firstItem="4to-Jt-JAP" firstAttribute="leading" secondItem="KsD-jU-zvY" secondAttribute="leading" constant="8" id="v7H-Gv-bxN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KsD-jU-zvY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y78-pv-Efy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fOA-zM-wwO" secondAttribute="bottom" id="dnI-6H-UfE"/>
+                            <constraint firstAttribute="trailing" secondItem="KsD-jU-zvY" secondAttribute="trailing" id="gyb-PX-aZU"/>
+                            <constraint firstItem="fOA-zM-wwO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sub-wK-VyC"/>
+                            <constraint firstAttribute="trailing" secondItem="fOA-zM-wwO" secondAttribute="trailing" id="uIv-cC-zdV"/>
+                            <constraint firstItem="fOA-zM-wwO" firstAttribute="top" secondItem="KsD-jU-zvY" secondAttribute="bottom" id="vtq-q5-0R4"/>
+                            <constraint firstItem="KsD-jU-zvY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zsP-7t-4Bo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="dnI-6H-UfE" id="hvz-T3-R9e"/>
+                        <outlet property="textField" destination="4to-Jt-JAP" id="RQ2-xi-FX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="297"/>
+        </scene>
+    </scenes>
+</document>
