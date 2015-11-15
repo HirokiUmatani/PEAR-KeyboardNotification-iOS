@@ -5,7 +5,7 @@
 It is keyboard notification for ios.
 
 ### Demo Screen
-![screen_shot](http://pear.chat/image/KeyboardNotification.png)
+![screen_shot](http://pear.chat/image/keyboard-demo-o.gif)
 ### Installation
 <code>
 pod 'PEAR-KeyboardNotification-iOS'
